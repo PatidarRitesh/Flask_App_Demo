@@ -1,0 +1,70 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <form method="post" action="/a_1">
+            <label>Search a Movie Genre:</label>
+            <input name="box" type="text" id="movie_genre">
+            <input id="a_1" type="submit">
+        </form>
+        {% if a_1_data %}
+        {{ a_1_data[1] }}
+        {% endif %}
+        <br><br>
+
+        <form method="post" action="/a_2">
+            <label>Search a Movie by Genre:</label>
+            <input name="box" type="text" id="movie_by_genre">
+            <input id="a_2" type="submit">
+        </form>
+        {% if a_2_data%}
+        {% for item in a_2_data %}
+        <p>{{ item[0] }}</p>
+        {% endfor %}
+        {% endif %}
+
+        <br><br>
+
+        <form method="post" action="/a_3">
+            <label>Search a Movie by Director:</label>
+            <input name="box" type="text" id="movie_by_director">
+            <input id="a_3" type="submit">
+        </form>
+        
+        {% if a_3_data%}
+        {% for item in a_3_data %}
+        <p>{{ item[0] }}</p>
+        {% endfor %}
+        {% endif %}
+
+
+        <br><br>
+        
+        <form method="post" action="/a_4">
+            <label>Search a Movies of Director:</label>
+            <input name = "box" type="text" id="movie_of_director">
+            <input id="a_4" type="submit" value="Submit">
+        </form>
+
+        {% if a_4_data%}
+        {% for item in a_4_data %}
+        <p>{{ item[0] }}</p>
+        {% endfor %}
+        {% endif %}        
+
+        <br><br>
+        
+
+        <label>Search a Movies Rating:</label>
+        <input type="text" id="movie_rating">
+        <input id="a_5" type="submit" value="Submit"><br><br>
+
+
+        <script>
+            
+        </script>
+    </body>
+
+</html>
