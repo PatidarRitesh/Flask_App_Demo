@@ -41,7 +41,7 @@ def a_2():
         data = cursor.fetchall()
 
         cursor.close()
-    print("HELL")
+        
     return render_template("index.html", a_2_data = data) 
 
 
@@ -56,7 +56,7 @@ def a_3():
         cursor.close()
     
     if len(data) == 0:
-        return render_template("index.html", a_3_data = [["Ritesh is hero."]]) 
+        return render_template("index.html", a_3_data = [["Not Found !!!"]]) 
 
     return render_template("index.html", a_3_data = data) 
 
@@ -71,7 +71,7 @@ def a_4():
         cursor.close()
     
     if len(data) == 0:
-        return render_template("index.html", a_4_data = [["Ritesh is hero."]]) 
+        return render_template("index.html", a_4_data = [["Not Found !!!"]]) 
 
     return render_template("index.html", a_4_data = data)
 
