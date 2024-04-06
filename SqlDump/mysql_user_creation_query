@@ -1,2 +1,0 @@
-CREATE USER 'testing'@'%' IDENTIFIED BY 'password'; 
-GRANT ALL PRIVILEGES ON *.* TO 'testing'@'%' WITH GRANT OPTION;
